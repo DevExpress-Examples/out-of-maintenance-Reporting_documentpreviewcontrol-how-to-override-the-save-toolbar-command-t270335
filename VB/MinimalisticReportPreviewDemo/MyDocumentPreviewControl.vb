@@ -7,14 +7,14 @@ Imports DevExpress.Xpf.Printing.PreviewControl
 Imports DevExpress.XtraPrinting
 
 Namespace MinimalisticReportPreviewDemo
-    Public Class MyDocumentPreviewControl
-        Inherits DocumentPreviewControl
+	Public Class MyDocumentPreviewControl
+		Inherits DocumentPreviewControl
 
-        Public Overrides Sub Save()
-            If System.Windows.MessageBox.Show("Do you want to save the document?", "Save...", System.Windows.MessageBoxButton.YesNoCancel) = System.Windows.MessageBoxResult.Yes Then
-                MyBase.Save()
-            End If
+		Public Overrides Sub Save()
+			If System.Windows.MessageBox.Show("Do you want to save the document?", "Save...", System.Windows.MessageBoxButton.YesNoCancel) = System.Windows.MessageBoxResult.Yes Then
+				MyBase.Save()
+			End If
 
-        End Sub
-    End Class
+		End Sub
+	End Class
 End Namespace
